@@ -383,6 +383,7 @@ body {
     .block__image {
         position: fixed;
         bottom: 142px;
+        /*comment*/
         left: 415px;
     }
 
