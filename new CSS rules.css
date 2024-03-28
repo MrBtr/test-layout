@@ -154,12 +154,12 @@ body {
 
 .sliding-menu {
     width: 303px;
-    height: 40px;
+    height: 57px;
     display: flex;
     align-items: end;
     margin-left: 16px;
     margin-bottom: 24px;
-    overflow: hidden;
+    overflow-x: scroll;
     align-items: center;
 }
 
@@ -381,9 +381,8 @@ body {
     }
 
     .block__image {
-        position: fixed;
-        bottom: 142px;
-        /*comment*/
+        position: relative;
+        bottom: 14em;
         left: 415px;
     }
 
