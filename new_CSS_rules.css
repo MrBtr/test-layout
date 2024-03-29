@@ -185,6 +185,16 @@ body {
     border-style: none;
     background-color: inherit;
     text-wrap: nowrap;
+    padding: 0 18px;
+}
+
+.sliding-menu__button--text {
+    font-family: "TT_lakes_medium", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #7e7e82;
 }
 
 .sliding-menu__button:focus {
@@ -514,17 +524,17 @@ body {
         top: 0;
     }
 
-    .sliding-menu__button:nth-child(2)::after {
+    /* .sliding-menu__button:nth-child(2)::after {
         content: none;
     }
     
     .sliding-menu__button:first-child {
         display: none;
-    }
-
+    } */
+/* 
     .sliding-menu__button:last-child {
         display: initial;
-    }
+    } */
 
     .block {
         width: 490px;
