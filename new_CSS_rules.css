@@ -156,8 +156,7 @@ body {
 }
 
 .sliding-menu {
-    width: 303px;
-    height: 57px;
+    min-height: 57px;
     display: flex;
     align-items: end;
     margin-left: 16px;
