@@ -180,7 +180,7 @@ body {
     background: linear-gradient(270deg, #f8f8f8 0.08%, #f8f8f8 100%);
     position: absolute;
     top: 24vh;
-    left: 92.5vw;
+    right: 0px;
     display: block;
     opacity: 0.8;
 }
