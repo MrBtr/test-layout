@@ -17,16 +17,12 @@
 body {
     margin: 0;
     padding: 0;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .header {
     min-width: 100%;
     height: 88px;
     display: flex;
-    /* margin-left: auto;
-    margin-right: auto; */
     align-items: center;
     justify-content: space-around;
 }
@@ -158,11 +154,23 @@ body {
 .sliding-menu {
     min-height: 57px;
     display: flex;
-    align-items: end;
+    overflow-x: scroll;
+    /* align-items: center; */
+}
+
+.sliding-menu__text {
+    font-family: "TT_lakes_medium", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #7e7e82;
+    margin: 0 24px;
+}
+
+.sliding-menu--mobile-placement {
     margin-left: 16px;
     margin-bottom: 24px;
-    overflow-x: scroll;
-    align-items: center;
 }
 
 .sliding-menu__button:nth-child(2)::after {
@@ -207,22 +215,14 @@ body {
 
 }
 
-.sliding-menu__text {
-    font-family: "TT_lakes_medium", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.01em;
-    color: #7e7e82;
-    margin: 0 24px;
-}
-
 .block {
-    max-height: 339px;
+    max-height: 322px;
+    display: flex;
+    flex-direction: column;
 }
 
 .block__text {
-    margin: 0 16px;
+    margin: 0 16px 16px;
 }
 
 .block__text--font {
@@ -235,7 +235,7 @@ body {
 }
 
 .read-further-block {
-    margin: 10px 0 16px 32px;
+    margin: 0 16px 16px;
 }
 
 .read-further-block__icon {
