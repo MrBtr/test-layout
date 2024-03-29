@@ -178,12 +178,10 @@ body {
     width: 24px;
     height: 48px;
     background: linear-gradient(270deg, #f8f8f8 0.08%, #f8f8f8 100%);
-    position: fixed;
-    top: 184px;
-    bottom: 600px;
-    left: 295px;
+    position: absolute;
+    top: 24vh;
+    left: 95vw;
     display: block;
-    right: 694px;
     opacity: 0.8;
 }
 
@@ -267,13 +265,13 @@ body {
 
 .block__image {
     width: 320px;
-    height: 246px;
+    height: 230.8px;
     position: relative;
-    bottom: 22px;
+    bottom: 28px;
 }
 
 .block__image--appearance {
-    clip-path: rect(29.26px 320px 216.26px 0);
+    clip-path: rect(29.26px 320px 205.26px 0);
 }
 
 
