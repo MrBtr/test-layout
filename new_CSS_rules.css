@@ -174,7 +174,7 @@ body {
     height: 48px;
     background: linear-gradient(270deg, #f8f8f8 0.08%, #f8f8f8 100%);
     position: absolute;
-    top: 24vh;
+    top: 168px;
     right: 0px;
     display: block;
     opacity: 0.8;
@@ -228,7 +228,7 @@ body {
 }
 
 .read-further-block {
-    margin: 0 16px 16px;
+    margin: 0 16px;
 }
 
 .read-further-block__icon {
@@ -261,8 +261,7 @@ body {
 .block__image {
     width: 320px;
     height: 230.8px;
-    position: relative;
-    bottom: 28px;
+    margin-top: -14px;
 }
 
 .block__image--appearance {
