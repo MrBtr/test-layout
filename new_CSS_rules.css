@@ -387,15 +387,14 @@ body {
 
 }
 
+
+
                                                                     /*DESKTOP LAYOUT*/
 
-                                                                    
+
 
 @media (min-width: 1120px) {
-    body {
-        width: 1121px;
-        height: 637px;
-    }
+
 
                                                                 /* css rules for <HEADER> */
 
