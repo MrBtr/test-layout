@@ -398,14 +398,7 @@ body {
 
                                                                 /* css rules for <HEADER> */
 
-     .header {
-        width: 1121px;
-        height: 93px;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        justify-content:end;
+     .header--desktop {
         position: absolute;
     }
 
@@ -413,17 +406,23 @@ body {
         content: none;
     }
 
-    .header div:nth-child(2), .header .icon:first-child {
+    .logo--desktop, .icon-button--desktop:first-child {
         display: none;  
     }
 
-    .header .icon:nth-child(6) {
+    .icon-button--desktop:nth-child(6) {
         margin-right: 160px;
         margin-top: 42px;
         margin-bottom: 10px;
     }
 
-    .header .icon:nth-child(6)::before {
+    .icon-button--desktop:nth-child(7) {
+        margin-right: 32px;
+        margin-top: 42px;
+        margin-bottom: 10px;
+    }
+
+    .icon-button--desktop:nth-child(6)::before {
         content: "Оставить заявку";
         font-family: "TT_lakes_medium", sans-serif;
         position: absolute;
@@ -437,13 +436,7 @@ body {
         color: #1b1c21;
     }
 
-    .header .icon:nth-child(7) {
-        margin-right: 32px;
-        margin-top: 42px;
-        margin-bottom: 10px;
-    }
-
-    .header .icon:nth-child(7)::before {
+    .icon-button--desktop:nth-child(7)::before {
         content: "Статус ремонта";
         font-family: "TT_lakes_medium", sans-serif;
         position: absolute;
