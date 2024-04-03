@@ -307,7 +307,6 @@ body {
 
     .main--tablet {
         min-height: 416px;
-        max-width: 98%;
     }
 
                                                  /* css rules for <MAIN> / <.title> */
@@ -324,20 +323,15 @@ body {
         margin: 0 0 32px 24px;
     }
 
-    .sliding-menu__button:nth-child(2)::after {
-        right: 17px;
-    }
-
                                                 /* css rules for <MAIN> / <.block> */
-
     .block__text--tablet {
-        margin: 0 24px;
         width: 312px;
+        margin: 0 0 0 24px;
     }
 
-    .block__full-text {
+    .block__full-text--tablet {
         display: block;
-        margin-top: 32px;
+        margin: 18px 0 10px 24px;
         width: 312px;
     }
 
@@ -419,12 +413,14 @@ body {
         color: #1b1c21;
     }
 
+    .header::after {
+        content: none;
+    }
+
                                                 /* css rules for <MAIN> */
                                            
     .main {
-        min-width: 1120px;
-        min-height: 535px;
-        margin: 0 auto;
+        height: 100vh;
         background: #f8f8f8;
     }
 
@@ -448,34 +444,28 @@ body {
         flex-wrap: wrap;
     }
 
+    .sliding-menu__button:nth-child(2)::after {
+        content: none;
+    }
+
                                                         /* css rules for <MAIN> / <.block> */
 
-    .block {
-        width: 490px;
-        height: 160px;
-    }
-
-    .block__image {
+    .block__image--desktop {
+        clip-path: rect(38.38px 100% 345.38px 0 round 2%);
         position: absolute;
-        left: 560px;
         top: 140.62px;
-        width: 531px;
-        height: 383px;
+        width: auto;
+        height: auto;
     }
 
-    .block__image--appearance {
-        clip-path: rect(38.38px 531px 345.38px 0px round 2%);    
+    .block__text--desktop {
+        margin-left: 32px;
+        width: 490px;
     }
 
-    .block__text {
-        margin-left: 34px;
-        margin-right: -36px;
-    }
-
-    .block__full-text {
-        display: block;
-        white-space: pre-line;
-        margin-top: 0;
+    .block__full-text--desktop {
+        margin: 18px 0 10px 32px;
+        width: 490px;
     }
 
     .block__tablet-clip {
@@ -488,5 +478,10 @@ body {
 
     .icon--hidden {
         display: none;
+    }
+
+    .block__read-further {
+        text-align: unset;
+        margin-left: 32px;
     }
 }
