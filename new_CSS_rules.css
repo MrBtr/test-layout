@@ -323,26 +323,12 @@ body {
         max-width: 98%;
     }
 
+                                                 /* css rules for <MAIN> / <.title> */
+
     .main__title--tablet {
         margin: 24px 0 32px;
         width: 257px;
         text-align: end;
-    }
-
-                                                                    /* css rules for <MAIN> / <.title> */
-
-    .title-container {
-        width: 257px;
-        height: 40px;
-        margin: 24px 512px 103px 20px;
-    }
-
-    .title-container::before {
-        top: 112px;
-    }
-
-    .title-container__title {
-        margin-left: 0;
     }
 
                                                 /* css rules for <MAIN> / <.sliding-menu> */
@@ -461,24 +447,9 @@ body {
 
                                         /* css rules for <MAIN> / <.title> */
     
-    .title-container {
-        width: 266px;
-        height: 40px;
-        margin-left: 15px;
-        margin-top: 42px;
-        margin-bottom: 8px;
-        text-align: end;
-    }
-
-    .title-container__title {
-        margin-left: 16px;
-        font-family: "TT_lakes_bold", sans-serif;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 143%;
-        letter-spacing: -0.02em;
-        color: #1b1c21;
-        display: inline;
+    .main__title--desktop {
+        text-align: start;
+        margin: 42px 0 8px 32px;
     }
 
     .title-container::before {
@@ -508,18 +479,6 @@ body {
     .sliding-menu__text {
         top: 0;
     }
-
-    /* .sliding-menu__button:nth-child(2)::after {
-        content: none;
-    }
-    
-    .sliding-menu__button:first-child {
-        display: none;
-    } */
-/* 
-    .sliding-menu__button:last-child {
-        display: initial;
-    } */
 
                                                         /* css rules for <MAIN> / <.block> */
 
