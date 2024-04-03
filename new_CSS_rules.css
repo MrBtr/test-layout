@@ -91,7 +91,7 @@ body {
     background: #eaeaea;
     position: absolute;
     top: 28px;
-    left: 58vw;
+    right: 132px
 }
 
 .header::after {
@@ -296,7 +296,7 @@ body {
     }
     
     .icon-button--tablet:nth-child(6)::before {
-        left: 81.5vw;
+        right: 144px;
     }
 
     .icon-button--tablet:nth-child(7) {
@@ -397,7 +397,6 @@ body {
         position: absolute;
         right: 405px;
         top: 50px;
-        left: unset;
         text-wrap: nowrap;
         background: unset;
     }
@@ -405,7 +404,6 @@ body {
     .icon-button--desktop:nth-child(7)::before {
         content: "Статус ремонта";
         position: absolute;
-        left: unset;
         right: 81px;
         top: 50px;
         text-wrap: nowrap;
