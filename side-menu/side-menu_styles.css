@@ -4,9 +4,36 @@ body {
     box-sizing: border-box;
     width: 320px;
     height: 1024px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 *, *::after, *::before {
     box-sizing: inherit;
+}
+
+
+.header{
+    display: flex;
+}
+
+button {
+border: none;
+}
+
+.icon-button {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--background {
+    background: #ff3e79 no-repeat 50% 50%;
+    border-radius: 20px;
+}
+
+.icon--background:first-child {
+    background-image: url("..//images/menu.svg");
+}
+
+.icon--background:last-child {
+    background-image: url("..//images/status_icon.svg");
 }
