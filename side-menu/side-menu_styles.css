@@ -5,7 +5,6 @@ body {
     width: 320px;
     height: 1024px;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
-    /* border: 1px solid red; */
 }
 
 *, *::after, *::before {
@@ -23,10 +22,11 @@ body {
 }
 
 
-                                                            /* CSS rules for TOP part*/
+                                                            /* for TOP part*/
 
 .top {
     display: flex;
+    position: relative;
 }
 
 .icon-button {
@@ -40,28 +40,55 @@ body {
     border-radius: 20px;
 }
 
-.icon--background:first-child {
+.icon-button--top:first-child {
     background-image: url("..//images/menu.svg");
+    margin: 23px 16.73px 0 24px;
 }
 
-.icon-button--side-menu:first-child {
-    margin: 23px 16.73px 0 24px;
+.icon-button--top:last-child {
+    background-image: url("..//images/status_icon.svg");
+    margin: 23px 24px 0 auto;
+}
+
+.icon-button--top:first-child:hover {
+    background: none;
+    transition: background 1s ease-out;
+}
+
+.icon-button--top:last-child:hover {
+    background: none;
+    transition: background 1s ease-out;
+}
+.icon-button__image {
+    position: absolute;
+}
+
+.icon-button__image--first {
+    top: 23px;
+    left: 24px;
+}
+
+.icon-button__image--last {
+    top: 23px;
+    left: 256px;
+}
+
+.icon-button__image--hidden {
+    opacity: 0;
+}
+
+.icon-button__image--hidden:hover {
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
 }
 
 .logo--side-menu {
     margin-top: 18.73px;
 }
 
-.icon-button--side-menu:last-child {
-    margin: 23px 24px 0 auto;
-}
 
 
-.icon--background:last-child {
-    background-image: url("..//images/status_icon.svg");
-}
-
-                                                    /* CSS rules for CONTAINER */
+                                                    /* for CONTAINER */
 
 .container {
     display: flex;
@@ -78,25 +105,9 @@ body {
 .navlink {
     border: none;
     background: none;
-    /* border: 1px solid red; */
     width: 100%;
     padding: 16px 0 16px 0;
     position: relative;
-}
-
-.navlink--side-menu {
-    margin-left: 24px;
-}
-
-.navlink--text {
-    text-align: start;
-    font-family: "TT_lakes_medium", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.01em;
-    color: #1b1c21;
-    text-wrap: nowrap;
 }
 
 .navlink:focus {
@@ -116,6 +127,23 @@ body {
     border-radius: 0 50% 50% 0;
 }
 
+.navlink--side-menu {
+    margin-left: 24px;
+}
+
+.navlink--text {
+    text-align: start;
+    font-family: "TT_lakes_medium", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    text-wrap: nowrap;
+}
+
+                                                    /* for  CONTACT CONTAINER */
+
 .contact-container {
     width: 196px;
     height: 124px;
@@ -128,7 +156,21 @@ body {
     margin-left: 24px;
 }
 
-.mail--style {
+.icon-button--contact:first-child {
+    background-image: url("..//images/phone.svg");
+    margin-right: 16px;
+}
+
+.icon-button--contact:nth-child(2) {
+    background-image: url("..//images/chat.svg");
+    margin-right: 16px;
+}
+
+.icon-button--contact:nth-child(3) {
+    background-image: url("..//images/profile.svg");
+}
+
+.mail--text {
     font-family: "TT_lakes_medium", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -138,7 +180,7 @@ body {
     text-decoration: none;
 }
 
-.tel--style {
+.tel--text {
     font-family: "TT_lakes_bold", sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -148,19 +190,7 @@ body {
     text-decoration: none;
 }
 
-.icon--background--contact:first-child {
-    background-image: url("..//images/phone.svg");
-    margin-right: 16px;
-}
-
-.icon--background--contact:nth-child(2) {
-    background-image: url("..//images/chat.svg");
-    margin-right: 16px;
-}
-
-.icon--background--contact:nth-child(3) {
-    background-image: url("..//images/profile.svg");
-}
+                                                    /* for LANGUAGE SELECTOR */
 
 .language-selector {
     width: 87px;
@@ -179,16 +209,16 @@ body {
     margin-left: -4px;
 }
 
+.language-selector__selector:focus {
+    color: #7e7e82;
+    outline: none;
+}
 
-.selector--font {
+.language-selector__selector--font {
     font-family: "TT__lakes__medium";
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
     color: #1b1c21;
-}
-
-.language-selector__selector:focus {
-    color: #7e7e82;
 }
